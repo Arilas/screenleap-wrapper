@@ -9,13 +9,11 @@
 return [
     'arilas' => [
         'screenleap' => [
-            'options' => [
-                'accountId' => '',
-                'token' => '',
-            ],
+            'accountId' => '',
+            'token' => '',
         ],
     ],
-    'service_manages' => [
+    'service_manager' => [
         'factories' => [
             'arilas.screenleap' => 'Arilas\ScreenLeap\Service\ScreenLeapFactory'
         ],
