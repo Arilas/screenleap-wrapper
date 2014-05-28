@@ -9,17 +9,22 @@
 namespace Arilas\ScreenLeap;
 
 
+use Arilas\ScreenLeap\Protocol\Connection;
+
 class ScreenLeap
 {
     protected $config;
 
+    protected $connection;
+
     public function __construct(array $config)
     {
         $this->config = $config;
+        $this->connection = new Connection($this->config['accountId'], $this->config['token']);
     }
 
     public function shareScreen()
     {
-
+        return $this->connection->doShareRequest();
     }
 } 

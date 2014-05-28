@@ -11,7 +11,7 @@ return [
         'screenleap' => [
             'options' => [
                 'accountId' => '',
-                'authToken' => '',
+                'token' => '',
             ],
         ],
     ],

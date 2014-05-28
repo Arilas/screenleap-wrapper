@@ -41,6 +41,7 @@ class Connection
             [
                 'headers' => [
                     'authtoken' => $this->token,
+                    'Accept' => 'application/json',
                 ],
                 'body' => [
                     'accountid' => $this->accountId,
@@ -48,6 +49,6 @@ class Connection
             ]
         );
 
-        return new ShareResponse(json_decode($response->getBody()->getContents(), true));
+        return new ShareResponse(json_decode($response->getBody(), true));
     }
 } 
