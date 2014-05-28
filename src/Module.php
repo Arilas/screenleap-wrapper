@@ -16,7 +16,7 @@ class Module
 {
     public function getConfig()
     {
-
+        return require_once __DIR__ . '/Resources/config/module.config.php';
     }
 
     public function getAutoloaderConfig()
