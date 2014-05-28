@@ -1,0 +1,23 @@
+{
+    "name": "arilas/screenleap-wrapper",
+    "description": "ScreenLeap API Wrapper",
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alex Grand",
+            "email": "Kiral.Group@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "zendframework/zendframework": "2.*"
+    },
+    "require": {
+        "guzzlehttp/guzzle": "4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Arilas\\ScreenLeap\\": "src/"
+        }
+    }
+}
